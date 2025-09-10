@@ -2,7 +2,7 @@
 
 ## O diretório 'results-IoT' contém os resultados de máquinas diferentes de desktops e laptops
 
-O diretório [pi3](results-IoT/pi3/) contém os resultados do benchmark da versão antiga da ferramenta, mas ainda válidos, rodando em um raspberry pi 3.
+O diretório [pi3](./results-IoT/pi3/) contém os resultados do benchmark da versão antiga da ferramenta, mas ainda válidos, rodando em um raspberry pi 3.
 
 ```text
 Dados da máquina:
@@ -11,7 +11,7 @@ CPU: cortex-a53 4/4
 RAM: 907 MB
 ```
 
-O diretório [pi4](results-IoT/pi4/) contém os resultados do benchmark rodando em um raspberry pi 4.
+O diretório [pi4](./results-IoT/pi4/) contém os resultados do benchmark rodando em um raspberry pi 4.
 
 ```text
 Dados da máquina:
