@@ -1,0 +1,295 @@
+2025-09-05 13:21:16,407	---	Command:
+	main.py --sign ecdsa mldsa dilithium falcon falcon-padded mayo sphincs-sha-s sphincs-sha-f sphincs-shake-s sphincs-shake-f cross-rsdp-small cross-rsdpg-small cross-rsdp-balanced cross-rsdpg-balanced cross-rsdp-fast cross-rsdpg-fast --runs 10000 --warm-up 1000 --levels 1 2 3 5
+
+2025-09-05 13:21:16,408	---	Settings:
+2025-09-05 13:21:16,408	---		input_file     : None
+2025-09-05 13:21:16,408	---		levels         : [1, 2, 3, 5]
+2025-09-05 13:21:16,408	---		list_sign      : False
+2025-09-05 13:21:16,408	---		model          : [2]
+2025-09-05 13:21:16,409	---		runs           : 10000
+2025-09-05 13:21:16,409	---		runs_simulator : 0
+2025-09-05 13:21:16,409	---		sign           : ['ecdsa', 'mldsa', 'dilithium', 'falcon', 'falcon-padded', 'mayo', 'sphincs-sha-s', 'sphincs-sha-f', 'sphincs-shake-s', 'sphincs-shake-f', 'cross-rsdp-small', 'cross-rsdpg-small', 'cross-rsdp-balanced', 'cross-rsdpg-balanced', 'cross-rsdp-fast', 'cross-rsdpg-fast']
+2025-09-05 13:21:16,409	---		verbosity      : 20
+2025-09-05 13:21:16,409	---		warm_up        : 1000
+2025-09-05 13:21:16,410	---	
+2025-09-05 13:21:16,410	---	[34m
+2025-09-05 13:21:16,410	---	+-----------------+
+2025-09-05 13:21:16,410	---	  BENCHMARK       
+2025-09-05 13:21:16,410	---	+-----------------+
+2025-09-05 13:21:16,411	---	
+2025-09-05 13:21:16,411	---		Algorithm: ecdsa
+2025-09-05 13:21:16,411	---			Running algorithm:ecdsa	level:1	variant:P-256  (using cryptography.py)...
+2025-09-05 13:21:24,231	---				Total duration time: 6.893038 s
+2025-09-05 13:21:24,232	---				mean keypair = 0.093285 ms	std keypair = 0.008922 ms
+2025-09-05 13:21:24,232	---				mean sign    = 0.190277 ms	std sign    = 0.012523 ms
+2025-09-05 13:21:24,233	---				mean verify  = 0.374266 ms	std verify  = 0.011562 ms
+2025-09-05 13:21:24,233	---			Running algorithm:ecdsa	level:3	variant:P-384  (using cryptography.py)...
+2025-09-05 13:22:01,493	---				Total duration time: 33.697153 s
+2025-09-05 13:22:01,493	---				mean keypair = 0.568078 ms	std keypair = 0.017961 ms
+2025-09-05 13:22:01,494	---				mean sign    = 0.944606 ms	std sign    = 0.026444 ms
+2025-09-05 13:22:01,494	---				mean verify  = 1.816027 ms	std verify  = 0.025424 ms
+2025-09-05 13:22:01,494	---			Running algorithm:ecdsa	level:5	variant:P-521  (using cryptography.py)...
+2025-09-05 13:23:05,676	---				Total duration time: 58.161077 s
+2025-09-05 13:23:05,677	---				mean keypair = 0.889776 ms	std keypair = 0.022668 ms
+2025-09-05 13:23:05,677	---				mean sign    = 1.719714 ms	std sign    = 0.031632 ms
+2025-09-05 13:23:05,677	---				mean verify  = 3.174074 ms	std verify  = 0.031853 ms
+2025-09-05 13:23:05,678	---	
+2025-09-05 13:23:05,678	---		Algorithm: mldsa
+2025-09-05 13:23:05,678	---			Running algorithm:mldsa	level:2	variant:ML-DSA-44  (using liboqs.py)...
+2025-09-05 13:23:22,211	---				Total duration time: 14.820891 s
+2025-09-05 13:23:22,212	---				mean keypair = 0.227073 ms	std keypair = 0.007878 ms
+2025-09-05 13:23:22,212	---				mean sign    = 0.942405 ms	std sign    = 0.591264 ms
+2025-09-05 13:23:22,212	---				mean verify  = 0.238691 ms	std verify  = 0.006017 ms
+2025-09-05 13:23:22,213	---			Running algorithm:mldsa	level:3	variant:ML-DSA-65  (using liboqs.py)...
+2025-09-05 13:23:48,425	---				Total duration time: 23.615792 s
+2025-09-05 13:23:48,425	---				mean keypair = 0.388400 ms	std keypair = 0.011287 ms
+2025-09-05 13:23:48,426	---				mean sign    = 1.523194 ms	std sign    = 1.027080 ms
+2025-09-05 13:23:48,426	---				mean verify  = 0.373268 ms	std verify  = 0.008108 ms
+2025-09-05 13:23:48,426	---			Running algorithm:mldsa	level:5	variant:ML-DSA-87  (using liboqs.py)...
+2025-09-05 13:24:22,596	---				Total duration time: 30.868445 s
+2025-09-05 13:24:22,597	---				mean keypair = 0.578051 ms	std keypair = 0.013966 ms
+2025-09-05 13:24:22,597	---				mean sign    = 1.832606 ms	std sign    = 1.039985 ms
+2025-09-05 13:24:22,597	---				mean verify  = 0.597437 ms	std verify  = 0.010378 ms
+2025-09-05 13:24:22,598	---	
+2025-09-05 13:24:22,598	---		Algorithm: dilithium
+2025-09-05 13:24:22,598	---			Running algorithm:dilithium	level:2	variant:Dilithium2  (using liboqs.py)...
+2025-09-05 13:24:32,846	---				Total duration time: 9.121051 s
+2025-09-05 13:24:32,847	---				mean keypair = 0.177969 ms	std keypair = 0.007505 ms
+2025-09-05 13:24:32,847	---				mean sign    = 0.490446 ms	std sign    = 0.271283 ms
+2025-09-05 13:24:32,848	---				mean verify  = 0.169953 ms	std verify  = 0.005476 ms
+2025-09-05 13:24:32,848	---			Running algorithm:dilithium	level:3	variant:Dilithium3  (using liboqs.py)...
+2025-09-05 13:24:48,526	---				Total duration time: 14.047750 s
+2025-09-05 13:24:48,527	---				mean keypair = 0.315312 ms	std keypair = 0.010675 ms
+2025-09-05 13:24:48,527	---				mean sign    = 0.740772 ms	std sign    = 0.413479 ms
+2025-09-05 13:24:48,527	---				mean verify  = 0.273139 ms	std verify  = 0.007729 ms
+2025-09-05 13:24:48,528	---			Running algorithm:dilithium	level:5	variant:Dilithium5  (using liboqs.py)...
+2025-09-05 13:25:10,511	---				Total duration time: 19.807174 s
+2025-09-05 13:25:10,512	---				mean keypair = 0.475533 ms	std keypair = 0.015703 ms
+2025-09-05 13:25:10,512	---				mean sign    = 0.967066 ms	std sign    = 0.431317 ms
+2025-09-05 13:25:10,512	---				mean verify  = 0.460001 ms	std verify  = 0.010395 ms
+2025-09-05 13:25:10,513	---	
+2025-09-05 13:25:10,513	---		Algorithm: sphincs-sha-s
+2025-09-05 13:25:10,513	---			Running algorithm:sphincs-sha-s	level:1	variant:SPHINCS+-SHA2-128s-simple  (using liboqs.py)...
+2025-09-05 22:12:09,257	---				Total duration time: 28748.442207 s
+2025-09-05 22:12:09,257	---				mean keypair = 337.643958 ms	std keypair = 0.391989 ms
+2025-09-05 22:12:09,258	---				mean sign    = 2534.512720 ms	std sign    = 5.171412 ms
+2025-09-05 22:12:09,258	---				mean verify  = 2.517151 ms	std verify  = 0.090354 ms
+2025-09-05 22:12:09,258	---			Running algorithm:sphincs-sha-s	level:3	variant:SPHINCS+-SHA2-192s-simple  (using liboqs.py)...
+2025-09-06 13:21:58,523	---				Total duration time: 49623.317807 s
+2025-09-06 13:21:58,524	---				mean keypair = 485.419624 ms	std keypair = 0.534745 ms
+2025-09-06 13:21:58,524	---				mean sign    = 4472.977216 ms	std sign    = 11.033124 ms
+2025-09-06 13:21:58,525	---				mean verify  = 3.763372 ms	std verify  = 0.094706 ms
+2025-09-06 13:21:58,525	---			Running algorithm:sphincs-sha-s	level:5	variant:SPHINCS+-SHA2-256s-simple  (using liboqs.py)...
+2025-09-07 02:47:17,717	---				Total duration time: 43926.411745 s
+2025-09-07 02:47:17,717	---				mean keypair = 326.863987 ms	std keypair = 0.522877 ms
+2025-09-07 02:47:17,717	---				mean sign    = 4060.189820 ms	std sign    = 8.603724 ms
+2025-09-07 02:47:17,718	---				mean verify  = 5.413595 ms	std verify  = 0.131944 ms
+2025-09-07 02:47:17,718	---	
+2025-09-07 02:47:17,718	---		Algorithm: sphincs-sha-f
+2025-09-07 02:47:17,718	---			Running algorithm:sphincs-sha-f	level:1	variant:SPHINCS+-SHA2-128f-simple  (using liboqs.py)...
+2025-09-07 03:11:48,464	---				Total duration time: 1336.844104 s
+2025-09-07 03:11:48,465	---				mean keypair = 5.220947 ms	std keypair = 0.025224 ms
+2025-09-07 03:11:48,465	---				mean sign    = 121.207453 ms	std sign    = 0.189078 ms
+2025-09-07 03:11:48,466	---				mean verify  = 7.159459 ms	std verify  = 0.163105 ms
+2025-09-07 03:11:48,466	---			Running algorithm:sphincs-sha-f	level:3	variant:SPHINCS+-SHA2-192f-simple  (using liboqs.py)...
+2025-09-07 03:51:46,765	---				Total duration time: 2180.177670 s
+2025-09-07 03:51:46,766	---				mean keypair = 7.650635 ms	std keypair = 0.029139 ms
+2025-09-07 03:51:46,766	---				mean sign    = 199.552034 ms	std sign    = 0.276966 ms
+2025-09-07 03:51:46,767	---				mean verify  = 10.703948 ms	std verify  = 0.170916 ms
+2025-09-07 03:51:46,767	---			Running algorithm:sphincs-sha-f	level:5	variant:SPHINCS+-SHA2-256f-simple  (using liboqs.py)...
+2025-09-07 05:18:47,799	---				Total duration time: 4746.492215 s
+2025-09-07 05:18:47,800	---				mean keypair = 21.842565 ms	std keypair = 0.039981 ms
+2025-09-07 05:18:47,800	---				mean sign    = 441.031816 ms	std sign    = 0.498315 ms
+2025-09-07 05:18:47,801	---				mean verify  = 11.639542 ms	std verify  = 0.214448 ms
+2025-09-07 05:18:47,801	---	
+2025-09-07 05:18:47,801	---		Algorithm: sphincs-shake-s
+2025-09-07 05:18:47,801	---			Running algorithm:sphincs-shake-s	level:1	variant:SPHINCS+-SHAKE-128s-simple  (using liboqs.py)...
+2025-09-07 13:35:57,451	---				Total duration time: 27117.689533 s
+2025-09-07 13:35:57,451	---				mean keypair = 317.221525 ms	std keypair = 0.182586 ms
+2025-09-07 13:35:57,452	---				mean sign    = 2391.967626 ms	std sign    = 1.127237 ms
+2025-09-07 13:35:57,452	---				mean verify  = 2.408654 ms	std verify  = 0.087519 ms
+2025-09-07 13:35:57,452	---			Running algorithm:sphincs-shake-s	level:3	variant:SPHINCS+-SHAKE-192s-simple  (using liboqs.py)...
+2025-09-08 03:43:43,202	---				Total duration time: 46240.804558 s
+2025-09-08 03:43:43,203	---				mean keypair = 462.169650 ms	std keypair = 0.245676 ms
+2025-09-08 03:43:43,203	---				mean sign    = 4158.216869 ms	std sign    = 1.520026 ms
+2025-09-08 03:43:43,204	---				mean verify  = 3.520751 ms	std verify  = 0.087926 ms
+2025-09-08 03:43:43,204	---			Running algorithm:sphincs-shake-s	level:5	variant:SPHINCS+-SHAKE-256s-simple  (using liboqs.py)...
+2025-09-08 15:48:23,208	---				Total duration time: 39522.803257 s
+2025-09-08 15:48:23,208	---				mean keypair = 307.191745 ms	std keypair = 1.032593 ms
+2025-09-08 15:48:23,209	---				mean sign    = 3639.791933 ms	std sign    = 3.116000 ms
+2025-09-08 15:48:23,209	---				mean verify  = 5.121029 ms	std verify  = 0.123986 ms
+2025-09-08 15:48:23,209	---	
+2025-09-08 15:48:23,209	---		Algorithm: sphincs-shake-f
+2025-09-08 15:48:23,210	---			Running algorithm:sphincs-shake-f	level:1	variant:SPHINCS+-SHAKE-128f-simple  (using liboqs.py)...
+2025-09-08 16:11:42,061	---				Total duration time: 1271.490295 s
+2025-09-08 16:11:42,061	---				mean keypair = 4.996389 ms	std keypair = 0.025034 ms
+2025-09-08 16:11:42,062	---				mean sign    = 115.194710 ms	std sign    = 0.096897 ms
+2025-09-08 16:11:42,062	---				mean verify  = 6.859419 ms	std verify  = 0.156958 ms
+2025-09-08 16:11:42,062	---			Running algorithm:sphincs-shake-f	level:3	variant:SPHINCS+-SHAKE-192f-simple  (using liboqs.py)...
+2025-09-08 16:49:17,376	---				Total duration time: 2050.087176 s
+2025-09-08 16:49:17,377	---				mean keypair = 7.276050 ms	std keypair = 0.027543 ms
+2025-09-08 16:49:17,377	---				mean sign    = 187.471553 ms	std sign    = 0.166750 ms
+2025-09-08 16:49:17,378	---				mean verify  = 10.151719 ms	std verify  = 0.159116 ms
+2025-09-08 16:49:17,378	---			Running algorithm:sphincs-shake-f	level:5	variant:SPHINCS+-SHAKE-256f-simple  (using liboqs.py)...
+2025-09-08 18:05:02,703	---				Total duration time: 4131.873550 s
+2025-09-08 18:05:02,704	---				mean keypair = 19.122891 ms	std keypair = 0.040086 ms
+2025-09-08 18:05:02,704	---				mean sign    = 383.652767 ms	std sign    = 0.250025 ms
+2025-09-08 18:05:02,704	---				mean verify  = 10.279312 ms	std verify  = 0.178179 ms
+2025-09-08 18:05:02,705	---	
+2025-09-08 18:05:02,705	---		Algorithm: falcon
+2025-09-08 18:05:02,705	---			Running algorithm:falcon	level:1	variant:Falcon-512  (using liboqs.py)...
+2025-09-08 18:08:43,121	---				Total duration time: 200.159284 s
+2025-09-08 18:08:43,122	---				mean keypair = 19.144265 ms	std keypair = 5.940012 ms
+2025-09-08 18:08:43,122	---				mean sign    = 0.674642 ms	std sign    = 0.037239 ms
+2025-09-08 18:08:43,122	---				mean verify  = 0.111204 ms	std verify  = 0.014335 ms
+2025-09-08 18:08:43,122	---			Running algorithm:falcon	level:5	variant:Falcon-1024  (using liboqs.py)...
+2025-09-08 18:18:50,819	---				Total duration time: 551.521810 s
+2025-09-08 18:18:50,819	---				mean keypair = 53.513551 ms	std keypair = 14.293967 ms
+2025-09-08 18:18:50,820	---				mean sign    = 1.343016 ms	std sign    = 0.050682 ms
+2025-09-08 18:18:50,820	---				mean verify  = 0.199337 ms	std verify  = 0.019732 ms
+2025-09-08 18:18:50,820	---	
+2025-09-08 18:18:50,821	---		Algorithm: falcon-padded
+2025-09-08 18:18:50,821	---			Running algorithm:falcon-padded	level:1	variant:Falcon-padded-512  (using liboqs.py)...
+2025-09-08 18:22:33,216	---				Total duration time: 202.149453 s
+2025-09-08 18:22:33,216	---				mean keypair = 19.344401 ms	std keypair = 6.050563 ms
+2025-09-08 18:22:33,217	---				mean sign    = 0.675042 ms	std sign    = 0.038361 ms
+2025-09-08 18:22:33,217	---				mean verify  = 0.108560 ms	std verify  = 0.006645 ms
+2025-09-08 18:22:33,217	---			Running algorithm:falcon-padded	level:5	variant:Falcon-padded-1024  (using liboqs.py)...
+2025-09-08 18:32:43,723	---				Total duration time: 556.079885 s
+2025-09-08 18:32:43,724	---				mean keypair = 53.975225 ms	std keypair = 14.911945 ms
+2025-09-08 18:32:43,724	---				mean sign    = 1.342434 ms	std sign    = 0.057190 ms
+2025-09-08 18:32:43,725	---				mean verify  = 0.194776 ms	std verify  = 0.009610 ms
+2025-09-08 18:32:43,725	---	
+2025-09-08 18:32:43,725	---		Algorithm: mayo
+2025-09-08 18:32:43,725	---			Running algorithm:mayo	level:1	variant:MAYO-2  (using liboqs.py)...
+2025-09-08 18:33:50,722	---				Total duration time: 60.724177 s
+2025-09-08 18:33:50,723	---				mean keypair = 2.135593 ms	std keypair = 0.019036 ms
+2025-09-08 18:33:50,723	---				mean sign    = 3.007697 ms	std sign    = 0.027937 ms
+2025-09-08 18:33:50,723	---				mean verify  = 0.836012 ms	std verify  = 0.035902 ms
+2025-09-08 18:33:50,724	---			Running algorithm:mayo	level:3	variant:MAYO-3  (using liboqs.py)...
+2025-09-08 18:36:34,094	---				Total duration time: 148.327122 s
+2025-09-08 18:36:34,094	---				mean keypair = 3.763880 ms	std keypair = 0.028546 ms
+2025-09-08 18:36:34,095	---				mean sign    = 8.264954 ms	std sign    = 0.052260 ms
+2025-09-08 18:36:34,095	---				mean verify  = 2.667831 ms	std verify  = 0.058592 ms
+2025-09-08 18:36:34,095	---			Running algorithm:mayo	level:5	variant:MAYO-5  (using liboqs.py)...
+2025-09-08 18:43:39,455	---				Total duration time: 386.496321 s
+2025-09-08 18:43:39,455	---				mean keypair = 10.002741 ms	std keypair = 0.031222 ms
+2025-09-08 18:43:39,456	---				mean sign    = 21.757328 ms	std sign    = 0.076298 ms
+2025-09-08 18:43:39,456	---				mean verify  = 6.678731 ms	std verify  = 0.124873 ms
+2025-09-08 18:43:39,456	---	
+2025-09-08 18:43:39,456	---		Algorithm: cross-rsdp-small
+2025-09-08 18:43:39,457	---			Running algorithm:cross-rsdp-small	level:1	variant:cross-rsdp-128-small  (using liboqs.py)...
+2025-09-08 18:47:11,108	---				Total duration time: 192.270432 s
+2025-09-08 18:47:11,109	---				mean keypair = 0.125895 ms	std keypair = 0.009529 ms
+2025-09-08 18:47:11,109	---				mean sign    = 11.786393 ms	std sign    = 0.055400 ms
+2025-09-08 18:47:11,110	---				mean verify  = 7.147402 ms	std verify  = 0.043716 ms
+2025-09-08 18:47:11,110	---			Running algorithm:cross-rsdp-small	level:3	variant:cross-rsdp-192-small  (using liboqs.py)...
+2025-09-08 18:52:15,277	---				Total duration time: 276.306886 s
+2025-09-08 18:52:15,277	---				mean keypair = 0.208304 ms	std keypair = 0.008387 ms
+2025-09-08 18:52:15,278	---				mean sign    = 17.659967 ms	std sign    = 0.042203 ms
+2025-09-08 18:52:15,278	---				mean verify  = 9.556956 ms	std verify  = 0.029819 ms
+2025-09-08 18:52:15,278	---			Running algorithm:cross-rsdp-small	level:5	variant:cross-rsdp-256-small  (using liboqs.py)...
+2025-09-08 18:59:50,324	---				Total duration time: 413.471316 s
+2025-09-08 18:59:50,324	---				mean keypair = 0.305245 ms	std keypair = 0.010251 ms
+2025-09-08 18:59:50,324	---				mean sign    = 28.017687 ms	std sign    = 0.044439 ms
+2025-09-08 18:59:50,325	---				mean verify  = 12.794441 ms	std verify  = 0.028304 ms
+2025-09-08 18:59:50,325	---	
+2025-09-08 18:59:50,325	---		Algorithm: cross-rsdpg-small
+2025-09-08 18:59:50,325	---			Running algorithm:cross-rsdpg-small	level:1	variant:cross-rsdpg-128-small  (using liboqs.py)...
+2025-09-08 19:02:25,806	---				Total duration time: 141.148224 s
+2025-09-08 19:02:25,807	---				mean keypair = 0.084836 ms	std keypair = 0.012642 ms
+2025-09-08 19:02:25,807	---				mean sign    = 8.585778 ms	std sign    = 0.032152 ms
+2025-09-08 19:02:25,808	---				mean verify  = 5.305331 ms	std verify  = 0.024730 ms
+2025-09-08 19:02:25,808	---			Running algorithm:cross-rsdpg-small	level:3	variant:cross-rsdpg-192-small  (using liboqs.py)...
+2025-09-08 19:06:25,440	---				Total duration time: 217.629377 s
+2025-09-08 19:06:25,440	---				mean keypair = 0.133690 ms	std keypair = 0.009864 ms
+2025-09-08 19:06:25,441	---				mean sign    = 13.098760 ms	std sign    = 0.040281 ms
+2025-09-08 19:06:25,441	---				mean verify  = 8.350418 ms	std verify  = 0.030633 ms
+2025-09-08 19:06:25,441	---			Running algorithm:cross-rsdpg-small	level:5	variant:cross-rsdpg-256-small  (using liboqs.py)...
+2025-09-08 19:11:33,992	---				Total duration time: 280.292234 s
+2025-09-08 19:11:33,993	---				mean keypair = 0.181001 ms	std keypair = 0.007535 ms
+2025-09-08 19:11:33,993	---				mean sign    = 17.360452 ms	std sign    = 0.042551 ms
+2025-09-08 19:11:33,993	---				mean verify  = 10.271537 ms	std verify  = 0.031136 ms
+2025-09-08 19:11:33,994	---	
+2025-09-08 19:11:33,994	---		Algorithm: cross-rsdp-balanced
+2025-09-08 19:11:33,994	---			Running algorithm:cross-rsdp-balanced	level:1	variant:cross-rsdp-128-balanced  (using liboqs.py)...
+2025-09-08 19:12:31,122	---				Total duration time: 51.733807 s
+2025-09-08 19:12:31,123	---				mean keypair = 0.080021 ms	std keypair = 0.012716 ms
+2025-09-08 19:12:31,123	---				mean sign    = 3.140561 ms	std sign    = 0.020002 ms
+2025-09-08 19:12:31,124	---				mean verify  = 1.867381 ms	std verify  = 0.016024 ms
+2025-09-08 19:12:31,124	---			Running algorithm:cross-rsdp-balanced	level:3	variant:cross-rsdp-192-balanced  (using liboqs.py)...
+2025-09-08 19:14:42,608	---				Total duration time: 119.338961 s
+2025-09-08 19:14:42,608	---				mean keypair = 0.168509 ms	std keypair = 0.013746 ms
+2025-09-08 19:14:42,608	---				mean sign    = 7.513867 ms	std sign    = 0.033549 ms
+2025-09-08 19:14:42,609	---				mean verify  = 4.112651 ms	std verify  = 0.027857 ms
+2025-09-08 19:14:42,609	---			Running algorithm:cross-rsdp-balanced	level:5	variant:cross-rsdp-256-balanced  (using liboqs.py)...
+2025-09-08 19:18:49,185	---				Total duration time: 223.964332 s
+2025-09-08 19:18:49,185	---				mean keypair = 0.280851 ms	std keypair = 0.011269 ms
+2025-09-08 19:18:49,186	---				mean sign    = 14.782764 ms	std sign    = 0.041045 ms
+2025-09-08 19:18:49,186	---				mean verify  = 7.154246 ms	std verify  = 0.025910 ms
+2025-09-08 19:18:49,186	---	
+2025-09-08 19:18:49,187	---		Algorithm: cross-rsdpg-balanced
+2025-09-08 19:18:49,187	---			Running algorithm:cross-rsdpg-balanced	level:1	variant:cross-rsdpg-128-balanced  (using liboqs.py)...
+2025-09-08 19:19:34,227	---				Total duration time: 40.735045 s
+2025-09-08 19:19:34,228	---				mean keypair = 0.050587 ms	std keypair = 0.012575 ms
+2025-09-08 19:19:34,228	---				mean sign    = 2.443220 ms	std sign    = 0.017852 ms
+2025-09-08 19:19:34,228	---				mean verify  = 1.498649 ms	std verify  = 0.014159 ms
+2025-09-08 19:19:34,228	---			Running algorithm:cross-rsdpg-balanced	level:3	variant:cross-rsdpg-192-balanced  (using liboqs.py)...
+2025-09-08 19:20:40,410	---				Total duration time: 59.962285 s
+2025-09-08 19:20:40,410	---				mean keypair = 0.080858 ms	std keypair = 0.013393 ms
+2025-09-08 19:20:40,410	---				mean sign    = 3.590334 ms	std sign    = 0.022539 ms
+2025-09-08 19:20:40,411	---				mean verify  = 2.232578 ms	std verify  = 0.019254 ms
+2025-09-08 19:20:40,411	---			Running algorithm:cross-rsdpg-balanced	level:5	variant:cross-rsdpg-256-balanced  (using liboqs.py)...
+2025-09-08 19:22:34,884	---				Total duration time: 103.864262 s
+2025-09-08 19:22:34,885	---				mean keypair = 0.128204 ms	std keypair = 0.013354 ms
+2025-09-08 19:22:34,885	---				mean sign    = 6.314718 ms	std sign    = 0.035726 ms
+2025-09-08 19:22:34,886	---				mean verify  = 3.810747 ms	std verify  = 0.026970 ms
+2025-09-08 19:22:34,886	---	
+2025-09-08 19:22:34,886	---		Algorithm: cross-rsdp-fast
+2025-09-08 19:22:34,886	---			Running algorithm:cross-rsdp-fast	level:1	variant:cross-rsdp-128-fast  (using liboqs.py)...
+2025-09-08 19:23:07,428	---				Total duration time: 29.381688 s
+2025-09-08 19:23:07,429	---				mean keypair = 0.077267 ms	std keypair = 0.010419 ms
+2025-09-08 19:23:07,429	---				mean sign    = 1.756958 ms	std sign    = 0.012684 ms
+2025-09-08 19:23:07,430	---				mean verify  = 1.024078 ms	std verify  = 0.010913 ms
+2025-09-08 19:23:07,430	---			Running algorithm:cross-rsdp-fast	level:3	variant:cross-rsdp-192-fast  (using liboqs.py)...
+2025-09-08 19:24:24,442	---				Total duration time: 69.818443 s
+2025-09-08 19:24:24,442	---				mean keypair = 0.149573 ms	std keypair = 0.014645 ms
+2025-09-08 19:24:24,443	---				mean sign    = 4.290725 ms	std sign    = 0.026890 ms
+2025-09-08 19:24:24,443	---				mean verify  = 2.437632 ms	std verify  = 0.022782 ms
+2025-09-08 19:24:24,443	---			Running algorithm:cross-rsdp-fast	level:5	variant:cross-rsdp-256-fast  (using liboqs.py)...
+2025-09-08 19:27:06,433	---				Total duration time: 146.994145 s
+2025-09-08 19:27:06,434	---				mean keypair = 0.263213 ms	std keypair = 0.012449 ms
+2025-09-08 19:27:06,434	---				mean sign    = 9.102660 ms	std sign    = 0.039068 ms
+2025-09-08 19:27:06,434	---				mean verify  = 5.178029 ms	std verify  = 0.053432 ms
+2025-09-08 19:27:06,435	---	
+2025-09-08 19:27:06,435	---		Algorithm: cross-rsdpg-fast
+2025-09-08 19:27:06,435	---			Running algorithm:cross-rsdpg-fast	level:1	variant:cross-rsdpg-128-fast  (using liboqs.py)...
+2025-09-08 19:27:30,903	---				Total duration time: 22.045589 s
+2025-09-08 19:27:30,904	---				mean keypair = 0.049832 ms	std keypair = 0.009912 ms
+2025-09-08 19:27:30,904	---				mean sign    = 1.296317 ms	std sign    = 0.012112 ms
+2025-09-08 19:27:30,904	---				mean verify  = 0.778560 ms	std verify  = 0.009409 ms
+2025-09-08 19:27:30,905	---			Running algorithm:cross-rsdpg-fast	level:3	variant:cross-rsdpg-192-fast  (using liboqs.py)...
+2025-09-08 19:28:24,195	---				Total duration time: 48.237464 s
+2025-09-08 19:28:24,195	---				mean keypair = 0.078758 ms	std keypair = 0.012752 ms
+2025-09-08 19:28:24,196	---				mean sign    = 2.832828 ms	std sign    = 0.019146 ms
+2025-09-08 19:28:24,196	---				mean verify  = 1.821899 ms	std verify  = 0.021694 ms
+2025-09-08 19:28:24,196	---			Running algorithm:cross-rsdpg-fast	level:5	variant:cross-rsdpg-256-fast  (using liboqs.py)...
+2025-09-08 19:29:55,990	---				Total duration time: 83.247551 s
+2025-09-08 19:29:55,991	---				mean keypair = 0.121086 ms	std keypair = 0.013849 ms
+2025-09-08 19:29:55,991	---				mean sign    = 4.933929 ms	std sign    = 0.028552 ms
+2025-09-08 19:29:55,991	---				mean verify  = 3.155319 ms	std verify  = 0.025151 ms
+2025-09-08 19:29:55,995	---	
+2025-09-08 19:29:55,995	---	Files generated by benchmarking:
+2025-09-08 19:29:55,995	---		results/2025-09-05_13-21-16_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/time-evaluation-10000x.csv
+2025-09-08 19:29:55,996	---		results/2025-09-05_13-21-16_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/time-evaluation-mean-std.csv
+2025-09-08 19:29:56,243	---	
+2025-09-08 19:29:56,243	---	Metadata exported to:
+2025-09-08 19:29:56,244	---		results/2025-09-05_13-21-16_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/input-and-system-info.json
+2025-09-08 19:29:56,244	---	
+2025-09-08 19:29:56,244	---	Generating benchmark plots:
+2025-09-08 19:29:59,076	---		results/2025-09-05_13-21-16_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/graphs/level-1.pdf
+2025-09-08 19:30:00,379	---		results/2025-09-05_13-21-16_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/graphs/level-2.pdf
+2025-09-08 19:30:02,394	---		results/2025-09-05_13-21-16_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/graphs/level-3.pdf
+2025-09-08 19:30:04,287	---		results/2025-09-05_13-21-16_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/graphs/level-5.pdf
+2025-09-08 19:30:04,295	---	
+2025-09-08 19:30:04,296	---	[32m
