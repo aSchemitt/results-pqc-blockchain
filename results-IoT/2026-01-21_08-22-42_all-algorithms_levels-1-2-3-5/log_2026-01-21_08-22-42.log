@@ -1,0 +1,341 @@
+2026-01-21 08:22:42,436	---	Command:
+	main.py --sign ecdsa mldsa dilithium falcon falcon-padded mayo sphincs-sha-s sphincs-sha-f sphincs-shake-s sphincs-shake-f cross-rsdp-small cross-rsdpg-small cross-rsdp-balanced cross-rsdpg-balanced cross-rsdp-fast cross-rsdpg-fast --runs 10000 --warm-up 1000 --levels 1 2 3 5
+
+2026-01-21 08:22:42,437	---	Settings:
+2026-01-21 08:22:42,437	---		input_file     : None
+2026-01-21 08:22:42,437	---		levels         : [1, 2, 3, 5]
+2026-01-21 08:22:42,437	---		list_sign      : False
+2026-01-21 08:22:42,437	---		model          : [2]
+2026-01-21 08:22:42,438	---		runs           : 10000
+2026-01-21 08:22:42,438	---		runs_simulator : 0
+2026-01-21 08:22:42,438	---		sign           : ['ecdsa', 'mldsa', 'dilithium', 'falcon', 'falcon-padded', 'mayo', 'sphincs-sha-s', 'sphincs-sha-f', 'sphincs-shake-s', 'sphincs-shake-f', 'cross-rsdp-small', 'cross-rsdpg-small', 'cross-rsdp-balanced', 'cross-rsdpg-balanced', 'cross-rsdp-fast', 'cross-rsdpg-fast']
+2026-01-21 08:22:42,438	---		verbosity      : 20
+2026-01-21 08:22:42,438	---		warm_up        : 1000
+2026-01-21 08:22:42,438	---	
+2026-01-21 08:22:42,439	---	[34m
+2026-01-21 08:22:42,439	---	+-----------------+
+2026-01-21 08:22:42,439	---	  BENCHMARK       
+2026-01-21 08:22:42,439	---	+-----------------+
+2026-01-21 08:22:42,440	---	
+2026-01-21 08:22:42,440	---		Algorithm: ecdsa
+2026-01-21 08:22:42,440	---			Running algorithm: ecdsa	level: 1	variant: P-256  (using cryptography.py)...
+2026-01-21 08:22:50,295	---				Total duration time: 6.841343 s
+2026-01-21 08:22:50,296	---				mean keypair = 0.092577 ms	std keypair = 0.009437 ms
+2026-01-21 08:22:50,296	---				mean sign    = 0.187894 ms	std sign    = 0.046266 ms
+2026-01-21 08:22:50,296	---				mean verify  = 0.372869 ms	std verify  = 0.024455 ms
+2026-01-21 08:22:50,297	---				mean sigSize = 71.009100 bytes	std sigSize = 0.712087 bytes
+2026-01-21 08:22:50,297	---			Running algorithm: ecdsa	level: 3	variant: P-384  (using cryptography.py)...
+2026-01-21 08:23:27,559	---				Total duration time: 33.674963 s
+2026-01-21 08:23:27,559	---				mean keypair = 0.567440 ms	std keypair = 0.014875 ms
+2026-01-21 08:23:27,560	---				mean sign    = 0.943505 ms	std sign    = 0.022724 ms
+2026-01-21 08:23:27,560	---				mean verify  = 1.814949 ms	std verify  = 0.022288 ms
+2026-01-21 08:23:27,560	---				mean sigSize = 103.001900 bytes	std sigSize = 0.713686 bytes
+2026-01-21 08:23:27,561	---			Running algorithm: ecdsa	level: 5	variant: P-521  (using cryptography.py)...
+2026-01-21 08:24:31,623	---				Total duration time: 58.042910 s
+2026-01-21 08:24:31,624	---				mean keypair = 0.886139 ms	std keypair = 0.018526 ms
+2026-01-21 08:24:31,624	---				mean sign    = 1.716000 ms	std sign    = 0.028389 ms
+2026-01-21 08:24:31,625	---				mean verify  = 3.168648 ms	std verify  = 0.028545 ms
+2026-01-21 08:24:31,625	---				mean sigSize = 138.495900 bytes	std sigSize = 0.615322 bytes
+2026-01-21 08:24:31,625	---	
+2026-01-21 08:24:31,625	---		Algorithm: mldsa
+2026-01-21 08:24:31,626	---			Running algorithm: mldsa	level: 2	variant: ML-DSA-44  (using liboqs.py)...
+2026-01-21 08:24:48,173	---				Total duration time: 14.836789 s
+2026-01-21 08:24:48,174	---				mean keypair = 0.227231 ms	std keypair = 0.006775 ms
+2026-01-21 08:24:48,174	---				mean sign    = 0.942971 ms	std sign    = 0.592077 ms
+2026-01-21 08:24:48,175	---				mean verify  = 0.237913 ms	std verify  = 0.005416 ms
+2026-01-21 08:24:48,175	---				mean sigSize = 2420.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-21 08:24:48,175	---			Running algorithm: mldsa	level: 3	variant: ML-DSA-65  (using liboqs.py)...
+2026-01-21 08:25:14,250	---				Total duration time: 23.500581 s
+2026-01-21 08:25:14,250	---				mean keypair = 0.390047 ms	std keypair = 0.009136 ms
+2026-01-21 08:25:14,251	---				mean sign    = 1.508369 ms	std sign    = 1.012265 ms
+2026-01-21 08:25:14,251	---				mean verify  = 0.373749 ms	std verify  = 0.006916 ms
+2026-01-21 08:25:14,251	---				mean sigSize = 3309.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-21 08:25:14,252	---			Running algorithm: mldsa	level: 5	variant: ML-DSA-87  (using liboqs.py)...
+2026-01-21 08:25:48,400	---				Total duration time: 30.842195 s
+2026-01-21 08:25:48,401	---				mean keypair = 0.579022 ms	std keypair = 0.013322 ms
+2026-01-21 08:25:48,401	---				mean sign    = 1.825488 ms	std sign    = 1.062717 ms
+2026-01-21 08:25:48,401	---				mean verify  = 0.597955 ms	std verify  = 0.010426 ms
+2026-01-21 08:25:48,401	---				mean sigSize = 4627.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-21 08:25:48,402	---	
+2026-01-21 08:25:48,402	---		Algorithm: dilithium
+2026-01-21 08:25:48,402	---			Running algorithm: dilithium	level: 2	variant: Dilithium2  (using liboqs.py)...
+2026-01-21 08:25:58,794	---				Total duration time: 9.228831 s
+2026-01-21 08:25:58,795	---				mean keypair = 0.179068 ms	std keypair = 0.007198 ms
+2026-01-21 08:25:58,795	---				mean sign    = 0.498138 ms	std sign    = 0.274219 ms
+2026-01-21 08:25:58,796	---				mean verify  = 0.170590 ms	std verify  = 0.005503 ms
+2026-01-21 08:25:58,796	---				mean sigSize = 2420.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-21 08:25:58,796	---			Running algorithm: dilithium	level: 3	variant: Dilithium3  (using liboqs.py)...
+2026-01-21 08:26:14,661	---				Total duration time: 14.224071 s
+2026-01-21 08:26:14,661	---				mean keypair = 0.318280 ms	std keypair = 0.010458 ms
+2026-01-21 08:26:14,662	---				mean sign    = 0.751747 ms	std sign    = 0.414575 ms
+2026-01-21 08:26:14,662	---				mean verify  = 0.274264 ms	std verify  = 0.006735 ms
+2026-01-21 08:26:14,662	---				mean sigSize = 3293.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-21 08:26:14,663	---			Running algorithm: dilithium	level: 5	variant: Dilithium5  (using liboqs.py)...
+2026-01-21 08:26:36,679	---				Total duration time: 19.826435 s
+2026-01-21 08:26:36,680	---				mean keypair = 0.473147 ms	std keypair = 0.012804 ms
+2026-01-21 08:26:36,680	---				mean sign    = 0.972620 ms	std sign    = 0.434330 ms
+2026-01-21 08:26:36,681	---				mean verify  = 0.456919 ms	std verify  = 0.009288 ms
+2026-01-21 08:26:36,681	---				mean sigSize = 4595.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-21 08:26:36,681	---	
+2026-01-21 08:26:36,681	---		Algorithm: sphincs-sha-s
+2026-01-21 08:26:36,681	---			Running algorithm: sphincs-sha-s	level: 1	variant: SPHINCS+-SHA2-128s-simple  (using liboqs.py)...
+2026-01-21 17:52:45,804	---				Total duration time: 30889.271077 s
+2026-01-21 17:52:45,804	---				mean keypair = 357.470564 ms	std keypair = 2.602346 ms
+2026-01-21 17:52:45,805	---				mean sign    = 2728.569040 ms	std sign    = 16.349392 ms
+2026-01-21 17:52:45,805	---				mean verify  = 2.714400 ms	std verify  = 0.100402 ms
+2026-01-21 17:52:45,805	---				mean sigSize = 7856.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-21 17:52:45,805	---			Running algorithm: sphincs-sha-s	level: 3	variant: SPHINCS+-SHA2-192s-simple  (using liboqs.py)...
+2026-01-22 10:08:31,079	---				Total duration time: 53230.162670 s
+2026-01-22 10:08:31,080	---				mean keypair = 523.873382 ms	std keypair = 3.935488 ms
+2026-01-22 10:08:31,080	---				mean sign    = 4794.961131 ms	std sign    = 17.359142 ms
+2026-01-22 10:08:31,080	---				mean verify  = 4.006780 ms	std verify  = 0.103804 ms
+2026-01-22 10:08:31,081	---				mean sigSize = 16224.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-22 10:08:31,081	---			Running algorithm: sphincs-sha-s	level: 5	variant: SPHINCS+-SHA2-256s-simple  (using liboqs.py)...
+2026-01-23 00:02:16,776	---				Total duration time: 45476.940363 s
+2026-01-23 00:02:16,777	---				mean keypair = 345.349948 ms	std keypair = 1.865669 ms
+2026-01-23 00:02:16,777	---				mean sign    = 4196.379326 ms	std sign    = 10.802795 ms
+2026-01-23 00:02:16,778	---				mean verify  = 5.789495 ms	std verify  = 0.138915 ms
+2026-01-23 00:02:16,778	---				mean sigSize = 29792.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-23 00:02:16,778	---	
+2026-01-23 00:02:16,778	---		Algorithm: sphincs-sha-f
+2026-01-23 00:02:16,779	---			Running algorithm: sphincs-sha-f	level: 1	variant: SPHINCS+-SHA2-128f-simple  (using liboqs.py)...
+2026-01-23 00:28:45,684	---				Total duration time: 1444.135895 s
+2026-01-23 00:28:45,685	---				mean keypair = 5.654822 ms	std keypair = 0.048603 ms
+2026-01-23 00:28:45,685	---				mean sign    = 130.814297 ms	std sign    = 0.881841 ms
+2026-01-23 00:28:45,686	---				mean verify  = 7.843710 ms	std verify  = 0.188693 ms
+2026-01-23 00:28:45,686	---				mean sigSize = 17088.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-23 00:28:45,686	---			Running algorithm: sphincs-sha-f	level: 3	variant: SPHINCS+-SHA2-192f-simple  (using liboqs.py)...
+2026-01-23 01:13:41,757	---				Total duration time: 2450.756516 s
+2026-01-23 01:13:41,757	---				mean keypair = 8.667909 ms	std keypair = 0.046692 ms
+2026-01-23 01:13:41,758	---				mean sign    = 224.264954 ms	std sign    = 0.373730 ms
+2026-01-23 01:13:41,758	---				mean verify  = 12.026742 ms	std verify  = 0.194921 ms
+2026-01-23 01:13:41,758	---				mean sigSize = 35664.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-23 01:13:41,758	---			Running algorithm: sphincs-sha-f	level: 5	variant: SPHINCS+-SHA2-256f-simple  (using liboqs.py)...
+2026-01-23 02:42:16,731	---				Total duration time: 4831.018504 s
+2026-01-23 02:42:16,731	---				mean keypair = 22.277303 ms	std keypair = 0.158839 ms
+2026-01-23 02:42:16,732	---				mean sign    = 449.143139 ms	std sign    = 2.628982 ms
+2026-01-23 02:42:16,732	---				mean verify  = 11.542182 ms	std verify  = 0.215724 ms
+2026-01-23 02:42:16,732	---				mean sigSize = 49856.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-23 02:42:16,732	---	
+2026-01-23 02:42:16,733	---		Algorithm: sphincs-shake-s
+2026-01-23 02:42:16,733	---			Running algorithm: sphincs-shake-s	level: 1	variant: SPHINCS+-SHAKE-128s-simple  (using liboqs.py)...
+2026-01-23 11:08:55,383	---				Total duration time: 27635.381517 s
+2026-01-23 11:08:55,383	---				mean keypair = 320.717350 ms	std keypair = 0.324178 ms
+2026-01-23 11:08:55,384	---				mean sign    = 2440.190100 ms	std sign    = 1.654487 ms
+2026-01-23 11:08:55,384	---				mean verify  = 2.456551 ms	std verify  = 0.089357 ms
+2026-01-23 11:08:55,384	---				mean sigSize = 7856.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-23 11:08:55,384	---			Running algorithm: sphincs-shake-s	level: 3	variant: SPHINCS+-SHAKE-192s-simple  (using liboqs.py)...
+2026-01-24 01:32:22,664	---				Total duration time: 47095.892863 s
+2026-01-24 01:32:22,665	---				mean keypair = 471.551085 ms	std keypair = 0.516672 ms
+2026-01-24 01:32:22,665	---				mean sign    = 4234.309617 ms	std sign    = 2.728669 ms
+2026-01-24 01:32:22,665	---				mean verify  = 3.553619 ms	std verify  = 0.090293 ms
+2026-01-24 01:32:22,666	---				mean sigSize = 16224.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 01:32:22,666	---			Running algorithm: sphincs-shake-s	level: 5	variant: SPHINCS+-SHAKE-256s-simple  (using liboqs.py)...
+2026-01-24 13:48:12,827	---				Total duration time: 40138.288862 s
+2026-01-24 13:48:12,828	---				mean keypair = 310.538066 ms	std keypair = 0.381423 ms
+2026-01-24 13:48:12,828	---				mean sign    = 3697.937849 ms	std sign    = 2.352643 ms
+2026-01-24 13:48:12,829	---				mean verify  = 5.175477 ms	std verify  = 0.125750 ms
+2026-01-24 13:48:12,829	---				mean sigSize = 29792.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 13:48:12,829	---	
+2026-01-24 13:48:12,830	---		Algorithm: sphincs-shake-f
+2026-01-24 13:48:12,830	---			Running algorithm: sphincs-shake-f	level: 1	variant: SPHINCS+-SHAKE-128f-simple  (using liboqs.py)...
+2026-01-24 14:11:58,455	---				Total duration time: 1295.825026 s
+2026-01-24 14:11:58,456	---				mean keypair = 5.050795 ms	std keypair = 0.025153 ms
+2026-01-24 14:11:58,456	---				mean sign    = 117.433113 ms	std sign    = 0.150431 ms
+2026-01-24 14:11:58,457	---				mean verify  = 7.000529 ms	std verify  = 0.159030 ms
+2026-01-24 14:11:58,457	---				mean sigSize = 17088.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 14:11:58,457	---			Running algorithm: sphincs-shake-f	level: 3	variant: SPHINCS+-SHAKE-192f-simple  (using liboqs.py)...
+2026-01-24 14:50:07,554	---				Total duration time: 2080.870670 s
+2026-01-24 14:50:07,555	---				mean keypair = 7.405758 ms	std keypair = 0.028792 ms
+2026-01-24 14:50:07,555	---				mean sign    = 190.318980 ms	std sign    = 0.159732 ms
+2026-01-24 14:50:07,555	---				mean verify  = 10.251229 ms	std verify  = 0.159478 ms
+2026-01-24 14:50:07,555	---				mean sigSize = 35664.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 14:50:07,556	---			Running algorithm: sphincs-shake-f	level: 5	variant: SPHINCS+-SHAKE-256f-simple  (using liboqs.py)...
+2026-01-24 16:07:06,901	---				Total duration time: 4199.328807 s
+2026-01-24 16:07:06,901	---				mean keypair = 19.465785 ms	std keypair = 0.039935 ms
+2026-01-24 16:07:06,902	---				mean sign    = 389.924961 ms	std sign    = 0.321904 ms
+2026-01-24 16:07:06,902	---				mean verify  = 10.408565 ms	std verify  = 0.182648 ms
+2026-01-24 16:07:06,902	---				mean sigSize = 49856.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 16:07:06,903	---	
+2026-01-24 16:07:06,903	---		Algorithm: falcon
+2026-01-24 16:07:06,903	---			Running algorithm: falcon	level: 1	variant: Falcon-512  (using liboqs.py)...
+2026-01-24 16:10:48,881	---				Total duration time: 201.731220 s
+2026-01-24 16:10:48,881	---				mean keypair = 19.301969 ms	std keypair = 5.902436 ms
+2026-01-24 16:10:48,882	---				mean sign    = 0.672891 ms	std sign    = 0.032243 ms
+2026-01-24 16:10:48,882	---				mean verify  = 0.110894 ms	std verify  = 0.013204 ms
+2026-01-24 16:10:48,882	---				mean sigSize = 655.057600 bytes	std sigSize = 2.198992 bytes
+2026-01-24 16:10:48,883	---			Running algorithm: falcon	level: 5	variant: Falcon-1024  (using liboqs.py)...
+2026-01-24 16:20:58,564	---				Total duration time: 553.874166 s
+2026-01-24 16:20:58,565	---				mean keypair = 53.747813 ms	std keypair = 14.687416 ms
+2026-01-24 16:20:58,565	---				mean sign    = 1.340665 ms	std sign    = 0.046750 ms
+2026-01-24 16:20:58,566	---				mean verify  = 0.199753 ms	std verify  = 0.019070 ms
+2026-01-24 16:20:58,566	---				mean sigSize = 1270.671600 bytes	std sigSize = 3.148896 bytes
+2026-01-24 16:20:58,566	---	
+2026-01-24 16:20:58,566	---		Algorithm: falcon-padded
+2026-01-24 16:20:58,567	---			Running algorithm: falcon-padded	level: 1	variant: Falcon-padded-512  (using liboqs.py)...
+2026-01-24 16:24:41,154	---				Total duration time: 202.086921 s
+2026-01-24 16:24:41,155	---				mean keypair = 19.340875 ms	std keypair = 5.959995 ms
+2026-01-24 16:24:41,155	---				mean sign    = 0.671778 ms	std sign    = 0.032864 ms
+2026-01-24 16:24:41,155	---				mean verify  = 0.108316 ms	std verify  = 0.005248 ms
+2026-01-24 16:24:41,156	---				mean sigSize = 666.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 16:24:41,156	---			Running algorithm: falcon-padded	level: 5	variant: Falcon-padded-1024  (using liboqs.py)...
+2026-01-24 16:34:49,258	---				Total duration time: 552.774961 s
+2026-01-24 16:34:49,259	---				mean keypair = 53.635301 ms	std keypair = 14.229623 ms
+2026-01-24 16:34:49,259	---				mean sign    = 1.345955 ms	std sign    = 0.057903 ms
+2026-01-24 16:34:49,259	---				mean verify  = 0.196119 ms	std verify  = 0.008066 ms
+2026-01-24 16:34:49,260	---				mean sigSize = 1280.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 16:34:49,260	---	
+2026-01-24 16:34:49,260	---		Algorithm: mayo
+2026-01-24 16:34:49,260	---			Running algorithm: mayo	level: 1	variant: MAYO-2  (using liboqs.py)...
+2026-01-24 16:35:56,515	---				Total duration time: 60.943129 s
+2026-01-24 16:35:56,516	---				mean keypair = 2.136876 ms	std keypair = 0.019862 ms
+2026-01-24 16:35:56,516	---				mean sign    = 3.019485 ms	std sign    = 0.027441 ms
+2026-01-24 16:35:56,516	---				mean verify  = 0.842092 ms	std verify  = 0.028306 ms
+2026-01-24 16:35:56,517	---				mean sigSize = 180.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 16:35:56,517	---			Running algorithm: mayo	level: 3	variant: MAYO-3  (using liboqs.py)...
+2026-01-24 16:38:39,802	---				Total duration time: 148.238830 s
+2026-01-24 16:38:39,803	---				mean keypair = 3.758957 ms	std keypair = 0.024450 ms
+2026-01-24 16:38:39,803	---				mean sign    = 8.283567 ms	std sign    = 0.046809 ms
+2026-01-24 16:38:39,804	---				mean verify  = 2.651311 ms	std verify  = 0.045949 ms
+2026-01-24 16:38:39,804	---				mean sigSize = 577.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 16:38:39,805	---			Running algorithm: mayo	level: 5	variant: MAYO-5  (using liboqs.py)...
+2026-01-24 16:45:44,303	---				Total duration time: 385.697685 s
+2026-01-24 16:45:44,303	---				mean keypair = 10.000701 ms	std keypair = 0.033063 ms
+2026-01-24 16:45:44,304	---				mean sign    = 21.770172 ms	std sign    = 0.074559 ms
+2026-01-24 16:45:44,304	---				mean verify  = 6.581690 ms	std verify  = 0.098274 ms
+2026-01-24 16:45:44,304	---				mean sigSize = 838.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 16:45:44,305	---	
+2026-01-24 16:45:44,305	---		Algorithm: cross-rsdp-small
+2026-01-24 16:45:44,305	---			Running algorithm: cross-rsdp-small	level: 1	variant: cross-rsdp-128-small  (using liboqs.py)...
+2026-01-24 16:49:17,368	---				Total duration time: 193.479478 s
+2026-01-24 16:49:17,369	---				mean keypair = 0.125607 ms	std keypair = 0.008345 ms
+2026-01-24 16:49:17,369	---				mean sign    = 11.855357 ms	std sign    = 0.041830 ms
+2026-01-24 16:49:17,369	---				mean verify  = 7.198902 ms	std verify  = 0.031492 ms
+2026-01-24 16:49:17,369	---				mean sigSize = 10080.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 16:49:17,370	---			Running algorithm: cross-rsdp-small	level: 3	variant: cross-rsdp-192-small  (using liboqs.py)...
+2026-01-24 16:54:23,462	---				Total duration time: 278.046907 s
+2026-01-24 16:54:23,463	---				mean keypair = 0.205823 ms	std keypair = 0.008458 ms
+2026-01-24 16:54:23,463	---				mean sign    = 17.771017 ms	std sign    = 0.049624 ms
+2026-01-24 16:54:23,464	---				mean verify  = 9.623046 ms	std verify  = 0.034640 ms
+2026-01-24 16:54:23,464	---				mean sigSize = 23642.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 16:54:23,464	---			Running algorithm: cross-rsdp-small	level: 5	variant: cross-rsdp-256-small  (using liboqs.py)...
+2026-01-24 17:01:59,792	---				Total duration time: 414.626845 s
+2026-01-24 17:01:59,793	---				mean keypair = 0.300698 ms	std keypair = 0.011465 ms
+2026-01-24 17:01:59,793	---				mean sign    = 28.082029 ms	std sign    = 0.059493 ms
+2026-01-24 17:01:59,793	---				mean verify  = 12.857835 ms	std verify  = 0.039708 ms
+2026-01-24 17:01:59,794	---				mean sigSize = 43592.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:01:59,794	---	
+2026-01-24 17:01:59,794	---		Algorithm: cross-rsdpg-small
+2026-01-24 17:01:59,794	---			Running algorithm: cross-rsdpg-small	level: 1	variant: cross-rsdpg-128-small  (using liboqs.py)...
+2026-01-24 17:04:38,262	---				Total duration time: 143.845115 s
+2026-01-24 17:04:38,263	---				mean keypair = 0.079251 ms	std keypair = 0.011659 ms
+2026-01-24 17:04:38,263	---				mean sign    = 8.768121 ms	std sign    = 0.038331 ms
+2026-01-24 17:04:38,264	---				mean verify  = 5.406003 ms	std verify  = 0.027301 ms
+2026-01-24 17:04:38,264	---				mean sigSize = 7956.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:04:38,264	---			Running algorithm: cross-rsdpg-small	level: 3	variant: cross-rsdpg-192-small  (using liboqs.py)...
+2026-01-24 17:08:40,456	---				Total duration time: 219.962208 s
+2026-01-24 17:08:40,457	---				mean keypair = 0.134676 ms	std keypair = 0.007076 ms
+2026-01-24 17:08:40,457	---				mean sign    = 13.232937 ms	std sign    = 0.047788 ms
+2026-01-24 17:08:40,458	---				mean verify  = 8.443415 ms	std verify  = 0.033269 ms
+2026-01-24 17:08:40,458	---				mean sigSize = 18188.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:08:40,458	---			Running algorithm: cross-rsdpg-small	level: 5	variant: cross-rsdpg-256-small  (using liboqs.py)...
+2026-01-24 17:13:52,386	---				Total duration time: 283.358439 s
+2026-01-24 17:13:52,387	---				mean keypair = 0.179852 ms	std keypair = 0.007798 ms
+2026-01-24 17:13:52,387	---				mean sign    = 17.525766 ms	std sign    = 0.053517 ms
+2026-01-24 17:13:52,388	---				mean verify  = 10.414724 ms	std verify  = 0.039012 ms
+2026-01-24 17:13:52,388	---				mean sigSize = 32742.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:13:52,388	---	
+2026-01-24 17:13:52,389	---		Algorithm: cross-rsdp-balanced
+2026-01-24 17:13:52,389	---			Running algorithm: cross-rsdp-balanced	level: 1	variant: cross-rsdp-128-balanced  (using liboqs.py)...
+2026-01-24 17:14:50,235	---				Total duration time: 52.372270 s
+2026-01-24 17:14:50,235	---				mean keypair = 0.081185 ms	std keypair = 0.011575 ms
+2026-01-24 17:14:50,236	---				mean sign    = 3.182025 ms	std sign    = 0.021773 ms
+2026-01-24 17:14:50,236	---				mean verify  = 1.885391 ms	std verify  = 0.016759 ms
+2026-01-24 17:14:50,236	---				mean sigSize = 12912.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:14:50,237	---			Running algorithm: cross-rsdp-balanced	level: 3	variant: cross-rsdp-192-balanced  (using liboqs.py)...
+2026-01-24 17:17:02,089	---				Total duration time: 119.651359 s
+2026-01-24 17:17:02,090	---				mean keypair = 0.164821 ms	std keypair = 0.013696 ms
+2026-01-24 17:17:02,090	---				mean sign    = 7.532944 ms	std sign    = 0.035131 ms
+2026-01-24 17:17:02,090	---				mean verify  = 4.137832 ms	std verify  = 0.025763 ms
+2026-01-24 17:17:02,091	---				mean sigSize = 28222.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:17:02,091	---			Running algorithm: cross-rsdp-balanced	level: 5	variant: cross-rsdp-256-balanced  (using liboqs.py)...
+2026-01-24 17:21:09,405	---				Total duration time: 224.613368 s
+2026-01-24 17:21:09,406	---				mean keypair = 0.284636 ms	std keypair = 0.010556 ms
+2026-01-24 17:21:09,406	---				mean sign    = 14.803330 ms	std sign    = 0.052253 ms
+2026-01-24 17:21:09,406	---				mean verify  = 7.184535 ms	std verify  = 0.031107 ms
+2026-01-24 17:21:09,407	---				mean sigSize = 51056.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:21:09,407	---	
+2026-01-24 17:21:09,407	---		Algorithm: cross-rsdpg-balanced
+2026-01-24 17:21:09,407	---			Running algorithm: cross-rsdpg-balanced	level: 1	variant: cross-rsdpg-128-balanced  (using liboqs.py)...
+2026-01-24 17:21:55,263	---				Total duration time: 41.470026 s
+2026-01-24 17:21:55,264	---				mean keypair = 0.052248 ms	std keypair = 0.010882 ms
+2026-01-24 17:21:55,264	---				mean sign    = 2.494995 ms	std sign    = 0.018942 ms
+2026-01-24 17:21:55,265	---				mean verify  = 1.514019 ms	std verify  = 0.014851 ms
+2026-01-24 17:21:55,265	---				mean sigSize = 9236.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:21:55,265	---			Running algorithm: cross-rsdpg-balanced	level: 3	variant: cross-rsdpg-192-balanced  (using liboqs.py)...
+2026-01-24 17:23:02,246	---				Total duration time: 60.676368 s
+2026-01-24 17:23:02,246	---				mean keypair = 0.080678 ms	std keypair = 0.012276 ms
+2026-01-24 17:23:02,247	---				mean sign    = 3.632673 ms	std sign    = 0.023264 ms
+2026-01-24 17:23:02,247	---				mean verify  = 2.260244 ms	std verify  = 0.020769 ms
+2026-01-24 17:23:02,247	---				mean sigSize = 23380.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:23:02,248	---			Running algorithm: cross-rsdpg-balanced	level: 5	variant: cross-rsdpg-256-balanced  (using liboqs.py)...
+2026-01-24 17:24:58,332	---				Total duration time: 105.312254 s
+2026-01-24 17:24:58,332	---				mean keypair = 0.135473 ms	std keypair = 0.010852 ms
+2026-01-24 17:24:58,333	---				mean sign    = 6.415950 ms	std sign    = 0.032612 ms
+2026-01-24 17:24:58,333	---				mean verify  = 3.849728 ms	std verify  = 0.026250 ms
+2026-01-24 17:24:58,333	---				mean sigSize = 40134.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:24:58,334	---	
+2026-01-24 17:24:58,334	---		Algorithm: cross-rsdp-fast
+2026-01-24 17:24:58,334	---			Running algorithm: cross-rsdp-fast	level: 1	variant: cross-rsdp-128-fast  (using liboqs.py)...
+2026-01-24 17:25:31,040	---				Total duration time: 29.517293 s
+2026-01-24 17:25:31,040	---				mean keypair = 0.077118 ms	std keypair = 0.008867 ms
+2026-01-24 17:25:31,041	---				mean sign    = 1.769270 ms	std sign    = 0.015518 ms
+2026-01-24 17:25:31,041	---				mean verify  = 1.025052 ms	std verify  = 0.011251 ms
+2026-01-24 17:25:31,041	---				mean sigSize = 19152.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:25:31,041	---			Running algorithm: cross-rsdp-fast	level: 3	variant: cross-rsdp-192-fast  (using liboqs.py)...
+2026-01-24 17:26:48,865	---				Total duration time: 70.542070 s
+2026-01-24 17:26:48,865	---				mean keypair = 0.147365 ms	std keypair = 0.012097 ms
+2026-01-24 17:26:48,865	---				mean sign    = 4.308345 ms	std sign    = 0.025500 ms
+2026-01-24 17:26:48,866	---				mean verify  = 2.495971 ms	std verify  = 0.020606 ms
+2026-01-24 17:26:48,866	---				mean sigSize = 42682.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:26:48,866	---			Running algorithm: cross-rsdp-fast	level: 5	variant: cross-rsdp-256-fast  (using liboqs.py)...
+2026-01-24 17:29:30,539	---				Total duration time: 146.761087 s
+2026-01-24 17:29:30,540	---				mean keypair = 0.260496 ms	std keypair = 0.010564 ms
+2026-01-24 17:29:30,540	---				mean sign    = 9.127836 ms	std sign    = 0.041395 ms
+2026-01-24 17:29:30,540	---				mean verify  = 5.142518 ms	std verify  = 0.030632 ms
+2026-01-24 17:29:30,541	---				mean sigSize = 76298.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:29:30,541	---	
+2026-01-24 17:29:30,541	---		Algorithm: cross-rsdpg-fast
+2026-01-24 17:29:30,541	---			Running algorithm: cross-rsdpg-fast	level: 1	variant: cross-rsdpg-128-fast  (using liboqs.py)...
+2026-01-24 17:29:55,071	---				Total duration time: 22.088520 s
+2026-01-24 17:29:55,072	---				mean keypair = 0.049347 ms	std keypair = 0.008368 ms
+2026-01-24 17:29:55,072	---				mean sign    = 1.295609 ms	std sign    = 0.011676 ms
+2026-01-24 17:29:55,072	---				mean verify  = 0.784781 ms	std verify  = 0.010063 ms
+2026-01-24 17:29:55,073	---				mean sigSize = 12472.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:29:55,073	---			Running algorithm: cross-rsdpg-fast	level: 3	variant: cross-rsdpg-192-fast  (using liboqs.py)...
+2026-01-24 17:30:48,589	---				Total duration time: 48.439815 s
+2026-01-24 17:30:48,590	---				mean keypair = 0.078012 ms	std keypair = 0.010989 ms
+2026-01-24 17:30:48,590	---				mean sign    = 2.870881 ms	std sign    = 0.022006 ms
+2026-01-24 17:30:48,591	---				mean verify  = 1.804936 ms	std verify  = 0.017076 ms
+2026-01-24 17:30:48,591	---				mean sigSize = 27404.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:30:48,591	---			Running algorithm: cross-rsdpg-fast	level: 5	variant: cross-rsdpg-256-fast  (using liboqs.py)...
+2026-01-24 17:32:21,110	---				Total duration time: 83.917117 s
+2026-01-24 17:32:21,111	---				mean keypair = 0.123232 ms	std keypair = 0.012182 ms
+2026-01-24 17:32:21,111	---				mean sign    = 4.951729 ms	std sign    = 0.028256 ms
+2026-01-24 17:32:21,112	---				mean verify  = 3.196961 ms	std verify  = 0.029294 ms
+2026-01-24 17:32:21,112	---				mean sigSize = 48938.000000 bytes	std sigSize = 0.000000 bytes
+2026-01-24 17:32:21,116	---	
+2026-01-24 17:32:21,116	---	Files generated by benchmarking:
+2026-01-24 17:32:21,116	---		results/2026-01-21_08-22-42_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/time-evaluation-10000x.csv
+2026-01-24 17:32:21,117	---		results/2026-01-21_08-22-42_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/time-evaluation-mean-std.csv
+2026-01-24 17:32:21,368	---	
+2026-01-24 17:32:21,368	---	Metadata exported to:
+2026-01-24 17:32:21,369	---		results/2026-01-21_08-22-42_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/input-and-system-info.json
+2026-01-24 17:32:21,369	---	
+2026-01-24 17:32:21,369	---	Generating benchmark plots:
+2026-01-24 17:32:25,022	---		results/2026-01-21_08-22-42_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/graphs/level-1.pdf
+2026-01-24 17:32:26,340	---		results/2026-01-21_08-22-42_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/graphs/level-2.pdf
+2026-01-24 17:32:28,314	---		results/2026-01-21_08-22-42_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/graphs/level-3.pdf
+2026-01-24 17:32:30,183	---		results/2026-01-21_08-22-42_cross-rsdp-balanced_cross-rsdp-fast_cross-rsdp-small_cross-rsdpg-balanced_cross-rsdpg-fast_cross-rsdpg-small_dilithium_ecdsa_falcon_falcon-padded_mayo_mldsa_sphincs-sha-f_sphincs-sha-s_sphincs-shake-f_sphincs-shake-s_levels-1-2-3-5/benchmark/graphs/level-5.pdf
+2026-01-24 17:32:30,191	---	
+2026-01-24 17:32:30,191	---	[32m
